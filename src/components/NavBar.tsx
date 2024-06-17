@@ -6,5 +6,5 @@ export default function NavBar() {
       <NavBarItems title="Trending" param="fetchTrending"/>
       <NavBarItems title="Top Rated" param="fetchTopRated"/>
     </div>
-  )
+  );
 }

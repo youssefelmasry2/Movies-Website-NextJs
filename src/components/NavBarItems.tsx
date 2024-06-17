@@ -8,7 +8,7 @@ interface NavBarItemsProps {
 }
 
 export default function NavBarItems({ title, param }: NavBarItemsProps) {
-  const searchParams = useSearchParams() as unknown as URLSearchParams;
+  const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
 
   return (
