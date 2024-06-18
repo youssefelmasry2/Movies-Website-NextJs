@@ -1,12 +1,12 @@
+import Card from "./Card";
+
 export default function Results({results}: {results: any}) {
   return (
-    <div>
+    <div className="sm:grid sm:grid-col-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 
+    max-w-6xl mx-auto py-4">
       {
         results.map((result: any) => (
-          <div key={result.id}>
-            <img src={`https://image.tmdb.org/t/p/w500/${result.poster_path}`} alt={result.original_title} />
-            <h3>{result.original_title}</h3>
-          </div>
+          <Card key={result.id} result={result} />
         ))
 
 
